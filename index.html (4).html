@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emperors Wellness & Fitness Studio | Madurai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #f59e0b;
+      --primary-hover: #d97706;
+      --bg-dark: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --whatsapp: #25d366;
+      --whatsapp-hover: #1ebd5a;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(12px);
+      background: rgba(15, 23, 42, 0.9);
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .brand-logo span {
+      color: var(--primary);
+    }
+
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: var(--whatsapp);
+      color: #fff;
+      padding: 0.65rem 1.25rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+    }
+
+    .cta-btn:hover {
+      background-color: var(--whatsapp-hover);
+      transform: translateY(-1px);
+    }
+
+    .hero {
+      position: relative;
+      padding: 5rem 1.5rem 4rem;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(245, 158, 11, 0.15);
+      color: var(--primary);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1 {
+      font-size: 2.75rem;
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.03em;
+    }
+
+    .hero p {
+      font-size: 1.125rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+
+    .timing-strip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      padding: 0.75rem 1.25rem;
+      border-radius: 12px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #cbd5e1;
+      margin-bottom: 2rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .section-title h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .section-title p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .feature-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      padding: 1.75rem;
+      border-radius: 16px;
+      transition: border-color 0.2s ease;
+    }
+
+    .feature-card:hover {
+      border-color: var(--primary);
+    }
+
+    .feature-icon {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .feature-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .feature-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .contact-card {
+      background: linear-gradient(145deg, #1e293b, #0f172a);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 2.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .contact-item {
+      margin-bottom: 1rem;
+    }
+
+    .contact-item strong {
+      display: block;
+      color: var(--primary);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.25rem;
+    }
+
+    footer {
+      border-top: 1px solid var(--card-border);
+      text-align: center;
+      padding: 2rem 1.5rem;
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    @media (max-width: 640px) {
+      .hero h1 {
+        font-size: 2.1rem;
+      }
+      .timing-strip {
+        flex-direction: column;
+        gap: 0.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        👑 <span>EMPERORS</span> STUDIO
+      </a>
+      <a href="https://wa.me/918838658152?text=Hello%20Emperors%20Wellness%20Studio%2C%20I%20would%20like%20to%20inquire%20about%20gym%20membership." target="_blank" class="cta-btn">
+        <span>💬 WhatsApp Us</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <span class="badge">Premier Fitness Center in Madurai</span>
+      <h1>Build Strength. Reclaim Wellness. Train Like Royalty.</h1>
+      <p>Transform your physique and lifestyle with structured strength routines, weight loss coaching, and certified fitness guidance.</p>
+      
+      <div class="timing-strip">
+        <span>⏰ Daily Training Batches:</span>
+        <strong style="color: #fff;">Morning: 5:30 AM – 9:00 AM | Evening: 4:00 PM – 9:00 PM</strong>
+      </div>
+      <div>
+        <a href="https://wa.me/918838658152?text=Hi%2C%20I%20want%20to%20book%20a%20free%20gym%20trial%20session%20at%20Emperors%20Wellness." target="_blank" class="cta-btn" style="padding: 0.85rem 1.75rem; font-size: 1rem;">
+          Book Free Trial on WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="section-title">
+        <h2>What We Offer</h2>
+        <p>Comprehensive fitness coaching designed for all skill levels</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🏋️‍♂️</div>
+          <h3>Strength & Body Conditioning</h3>
+          <p>Heavy-duty resistance equipment and guided free-weight programs to build raw power and lean muscle.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔥</div>
+          <h3>Fat Loss & Cardio Shred</h3>
+          <p>High-energy HIIT sessions, endurance stations, and customized diet tips to hit your target weight faster.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3>Personalized Coaching</h3>
+          <p>Dedicated trainer attention to ensure proper exercise form, steady progression, and injury prevention.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🥗</div>
+          <h3>Diet & Lifestyle Guidance</h3>
+          <p>Practical nutrition advice calibrated for daily routines, protein balance, and long-term energy.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="contact-card">
+        <div>
+          <h2 style="font-size: 1.85rem; margin-bottom: 1rem;">Visit Our Studio</h2>
+          <div class="contact-item">
+            <strong>Address</strong>
+            <p>No. 2, S V Complex, Sangeeth Nagar 1st Cross Street,<br>Alanganallur Main Road, Madurai – 625017, Tamil Nadu</p>
+          </div>
+          <div class="contact-item">
+            <strong>Operating Batches</strong>
+            <p>Mon – Sat: 5:30 AM – 9:00 AM & 4:00 PM – 9:00 PM</p>
+          </div>
+          <div class="contact-item">
+            <strong>Direct Phone / WhatsApp</strong>
+            <p style="font-size: 1.1rem; font-weight: 700; color: #fff;">+91 88386 58152</p>
+          </div>
+        </div>
+
+        <div style="text-align: center; background: rgba(15, 23, 42, 0.6); padding: 2rem; border-radius: 16px; border: 1px dashed var(--card-border);">
+          <h3 style="margin-bottom: 0.75rem;">Ready to Start?</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">Send a quick text to check membership discounts and batch availability.</p>
+          <a href="https://wa.me/918838658152?text=Hello%20Emperors%20Wellness%2C%20please%20share%20membership%20plans%20and%20fees." target="_blank" class="cta-btn" style="width: 100%; justify-content: center;">
+            Chat with Trainer on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Emperors Wellness & Fitness Studio. All rights reserved. Demo created by Rokiyh Web Design.</p>
+  </footer>
+
+</body>
+</html>
